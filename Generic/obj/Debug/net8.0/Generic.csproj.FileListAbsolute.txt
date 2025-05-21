@@ -1,0 +1,14 @@
+D:\JAMES\James\programming\CSharp\Learn\Generic\bin\Debug\net8.0\Generic.exe
+D:\JAMES\James\programming\CSharp\Learn\Generic\bin\Debug\net8.0\Generic.deps.json
+D:\JAMES\James\programming\CSharp\Learn\Generic\bin\Debug\net8.0\Generic.runtimeconfig.json
+D:\JAMES\James\programming\CSharp\Learn\Generic\bin\Debug\net8.0\Generic.dll
+D:\JAMES\James\programming\CSharp\Learn\Generic\bin\Debug\net8.0\Generic.pdb
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\Generic.GeneratedMSBuildEditorConfig.editorconfig
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\Generic.AssemblyInfoInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\Generic.AssemblyInfo.cs
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\Generic.csproj.CoreCompileInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\Generic.dll
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\refint\Generic.dll
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\Generic.pdb
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\Generic.genruntimeconfig.cache
+D:\JAMES\James\programming\CSharp\Learn\Generic\obj\Debug\net8.0\ref\Generic.dll

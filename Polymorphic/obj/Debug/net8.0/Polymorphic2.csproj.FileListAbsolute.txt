@@ -1,0 +1,14 @@
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\bin\Debug\net8.0\Polymorphic2.exe
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\bin\Debug\net8.0\Polymorphic2.deps.json
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\bin\Debug\net8.0\Polymorphic2.runtimeconfig.json
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\bin\Debug\net8.0\Polymorphic2.dll
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\bin\Debug\net8.0\Polymorphic2.pdb
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\Polymorphic2.GeneratedMSBuildEditorConfig.editorconfig
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\Polymorphic2.AssemblyInfoInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\Polymorphic2.AssemblyInfo.cs
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\Polymorphic2.csproj.CoreCompileInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\Polymorphic2.dll
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\refint\Polymorphic2.dll
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\Polymorphic2.pdb
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\Polymorphic2.genruntimeconfig.cache
+D:\JAMES\James\programming\CSharp\Learn\Polymorphic2\obj\Debug\net8.0\ref\Polymorphic2.dll

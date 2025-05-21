@@ -1,0 +1,14 @@
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\bin\Debug\net8.0\MoreThreads.exe
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\bin\Debug\net8.0\MoreThreads.deps.json
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\bin\Debug\net8.0\MoreThreads.runtimeconfig.json
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\bin\Debug\net8.0\MoreThreads.dll
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\bin\Debug\net8.0\MoreThreads.pdb
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\MoreThreads.GeneratedMSBuildEditorConfig.editorconfig
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\MoreThreads.AssemblyInfoInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\MoreThreads.AssemblyInfo.cs
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\MoreThreads.csproj.CoreCompileInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\MoreThreads.dll
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\refint\MoreThreads.dll
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\MoreThreads.pdb
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\MoreThreads.genruntimeconfig.cache
+D:\JAMES\James\programming\CSharp\Learn\MoreThreads\obj\Debug\net8.0\ref\MoreThreads.dll

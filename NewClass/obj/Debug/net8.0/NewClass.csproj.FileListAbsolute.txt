@@ -1,0 +1,14 @@
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\NewClass.GeneratedMSBuildEditorConfig.editorconfig
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\NewClass.AssemblyInfoInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\NewClass.AssemblyInfo.cs
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\NewClass.csproj.CoreCompileInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\NewClass\bin\Debug\net8.0\NewClass.exe
+D:\JAMES\James\programming\CSharp\Learn\NewClass\bin\Debug\net8.0\NewClass.deps.json
+D:\JAMES\James\programming\CSharp\Learn\NewClass\bin\Debug\net8.0\NewClass.runtimeconfig.json
+D:\JAMES\James\programming\CSharp\Learn\NewClass\bin\Debug\net8.0\NewClass.dll
+D:\JAMES\James\programming\CSharp\Learn\NewClass\bin\Debug\net8.0\NewClass.pdb
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\NewClass.dll
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\refint\NewClass.dll
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\NewClass.pdb
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\NewClass.genruntimeconfig.cache
+D:\JAMES\James\programming\CSharp\Learn\NewClass\obj\Debug\net8.0\ref\NewClass.dll

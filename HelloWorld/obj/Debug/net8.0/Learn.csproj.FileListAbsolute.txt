@@ -1,0 +1,14 @@
+D:\JAMES\James\programming\CSharp\Learn\Learn\bin\Debug\net8.0\Learn.exe
+D:\JAMES\James\programming\CSharp\Learn\Learn\bin\Debug\net8.0\Learn.deps.json
+D:\JAMES\James\programming\CSharp\Learn\Learn\bin\Debug\net8.0\Learn.runtimeconfig.json
+D:\JAMES\James\programming\CSharp\Learn\Learn\bin\Debug\net8.0\Learn.dll
+D:\JAMES\James\programming\CSharp\Learn\Learn\bin\Debug\net8.0\Learn.pdb
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\Learn.GeneratedMSBuildEditorConfig.editorconfig
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\Learn.AssemblyInfoInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\Learn.AssemblyInfo.cs
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\Learn.csproj.CoreCompileInputs.cache
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\Learn.dll
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\refint\Learn.dll
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\Learn.pdb
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\Learn.genruntimeconfig.cache
+D:\JAMES\James\programming\CSharp\Learn\Learn\obj\Debug\net8.0\ref\Learn.dll
