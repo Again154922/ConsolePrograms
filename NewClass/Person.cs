@@ -2,18 +2,10 @@
 
 public class Person(int age, string name, Gender gender, string address)
 {
-    private int Age => age;
-    private string Name => name;
-    private Gender Gender => gender;
-    private string Address => address;
-
-    // public Person(int age, string name, Gender gender, string address)
-    // {
-    //     this.Age = age;
-    //     this.Name = name;
-    //     this.Gender = gender;
-    //     this.Address = address;
-    // }
+    private int Age { get; } = age;
+    private string Name { get; } = name;
+    private Gender Gender { get; } = gender;
+    private string Address { get; } = address;
 
     public void Introduction()
     {
