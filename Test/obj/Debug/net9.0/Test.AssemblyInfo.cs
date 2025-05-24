@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("NewClass")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b94827fdbca19203d6dce3e8185bb157192369e5")]
-[assembly: System.Reflection.AssemblyProductAttribute("NewClass")]
-[assembly: System.Reflection.AssemblyTitleAttribute("NewClass")]
+[assembly: System.Reflection.AssemblyProductAttribute("Test")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。

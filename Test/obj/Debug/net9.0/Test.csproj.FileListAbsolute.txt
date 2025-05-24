@@ -1,0 +1,15 @@
+F:\CSharp\Learn\Test\bin\Debug\net9.0\Test.exe
+F:\CSharp\Learn\Test\bin\Debug\net9.0\Test.deps.json
+F:\CSharp\Learn\Test\bin\Debug\net9.0\Test.runtimeconfig.json
+F:\CSharp\Learn\Test\bin\Debug\net9.0\Test.dll
+F:\CSharp\Learn\Test\bin\Debug\net9.0\Test.pdb
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.GeneratedMSBuildEditorConfig.editorconfig
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.AssemblyInfoInputs.cache
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.AssemblyInfo.cs
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.csproj.CoreCompileInputs.cache
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.sourcelink.json
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.dll
+F:\CSharp\Learn\Test\obj\Debug\net9.0\refint\Test.dll
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.pdb
+F:\CSharp\Learn\Test\obj\Debug\net9.0\Test.genruntimeconfig.cache
+F:\CSharp\Learn\Test\obj\Debug\net9.0\ref\Test.dll
