@@ -12,8 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generic", "Generic\Generic.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitString", "SplitString\SplitString.csproj", "{5FCFEB43-7FE9-44FD-80F6-C815D9DEEFE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{6C4723A8-E9D4-4E67-AA7B-38E273BA84D9}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,9 +42,5 @@ Global
 		{5FCFEB43-7FE9-44FD-80F6-C815D9DEEFE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FCFEB43-7FE9-44FD-80F6-C815D9DEEFE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FCFEB43-7FE9-44FD-80F6-C815D9DEEFE2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C4723A8-E9D4-4E67-AA7B-38E273BA84D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C4723A8-E9D4-4E67-AA7B-38E273BA84D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6C4723A8-E9D4-4E67-AA7B-38E273BA84D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6C4723A8-E9D4-4E67-AA7B-38E273BA84D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
