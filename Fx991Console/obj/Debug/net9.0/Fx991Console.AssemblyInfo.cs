@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Generic")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Fx991Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+feff12ba4210e62624689e800fedff627ec34e2c")]
-[assembly: System.Reflection.AssemblyProductAttribute("Generic")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Generic")]
+[assembly: System.Reflection.AssemblyProductAttribute("Fx991Console")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Fx991Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
