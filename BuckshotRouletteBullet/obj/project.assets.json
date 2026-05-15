@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CSharp\\Learn\\Fx991Console\\Fx991Console.csproj",
-      "projectName": "Fx991Console",
-      "projectPath": "F:\\CSharp\\Learn\\Fx991Console\\Fx991Console.csproj",
+      "projectUniqueName": "F:\\CSharp\\Learn\\BuckshotRouletteBullet\\BuckshotRouletteBullet.csproj",
+      "projectName": "BuckshotRouletteBullet",
+      "projectPath": "F:\\CSharp\\Learn\\BuckshotRouletteBullet\\BuckshotRouletteBullet.csproj",
       "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "F:\\CSharp\\Learn\\Fx991Console\\obj\\",
+      "outputPath": "F:\\CSharp\\Learn\\BuckshotRouletteBullet\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

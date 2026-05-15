@@ -1,0 +1,15 @@
+F:\CSharp\Learn\BuckshotRouletteBullet\bin\Debug\net9.0\BuckshotRouletteBullet.exe
+F:\CSharp\Learn\BuckshotRouletteBullet\bin\Debug\net9.0\BuckshotRouletteBullet.deps.json
+F:\CSharp\Learn\BuckshotRouletteBullet\bin\Debug\net9.0\BuckshotRouletteBullet.runtimeconfig.json
+F:\CSharp\Learn\BuckshotRouletteBullet\bin\Debug\net9.0\BuckshotRouletteBullet.dll
+F:\CSharp\Learn\BuckshotRouletteBullet\bin\Debug\net9.0\BuckshotRouletteBullet.pdb
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.GeneratedMSBuildEditorConfig.editorconfig
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.AssemblyInfoInputs.cache
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.AssemblyInfo.cs
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.csproj.CoreCompileInputs.cache
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.sourcelink.json
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.dll
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\refint\BuckshotRouletteBullet.dll
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.pdb
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\BuckshotRouletteBullet.genruntimeconfig.cache
+F:\CSharp\Learn\BuckshotRouletteBullet\obj\Debug\net9.0\ref\BuckshotRouletteBullet.dll
