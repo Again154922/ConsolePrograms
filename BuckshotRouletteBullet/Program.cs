@@ -80,7 +80,7 @@
                 int round = int.Parse(Console.ReadLine()!);
                 Console.Write("键入数字:\n1. 实弹\n2. 空包弹\n>>> ");
                 int phoneOperation = int.Parse(Console.ReadLine()!);
-                _phoneDict.Add(round + _num, phoneOperation);
+                _phoneDict.Add(round + _num - 1, phoneOperation);
 
                 int realCount = 0;
                 int fakeCount = 0;
