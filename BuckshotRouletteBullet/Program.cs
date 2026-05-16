@@ -75,7 +75,7 @@ internal static class Program
                     _bulletList = GenerateInverseMarkerList(_real + _fake, fakeList);
                 }
                 
-                Output(1);
+                Output();
                 break;
             
             case 2:
@@ -115,7 +115,7 @@ internal static class Program
                     _bulletList = GenerateInverseMarkerList(_real + _fake, fakeList);
                 }
                 
-                Output(2);
+                Output();
                 break;
             
             case 3:
@@ -127,66 +127,27 @@ internal static class Program
         goto Start;
     }
 
-    static void Output(int operation)
+    static void Output()
     {
         Console.Clear();
         Console.WriteLine("输出:");
-        
-        switch (operation)
+        Console.WriteLine($"剩余实弹:\t{_real}");
+        Console.WriteLine($"剩余空包弹:\t{_fake}");
+
+        if (_real != 0 || _fake != 0)
         {
-            case 1:
-                Console.WriteLine($"剩余实弹:\t{_real}");
-                Console.WriteLine($"剩余空包弹:\t{_fake}");
-                if (_phoneDict.Count != 0)
+            Console.Write("剩余顺序:\t");
+            if (_bulletList != null)
+            {
+                foreach (var i in _bulletList)
                 {
-                    Console.WriteLine("已知:");
-                    foreach (var pair in _phoneDict)
-                    {
-                        Console.WriteLine($"{pair.Key}{GetOdinaryNum(pair.Key)}:\t{(pair.Value == 1 ? "实弹" : "空包弹")}");
-                    }
+                    Console.Write($"{(i == 1 ? "真" : "假")}");
                 }
-
-                if (_real != 0 || _fake != 0)
-                {
-                    Console.Write("剩余顺序:\t");
-                    if (_bulletList != null)
-                    {
-                        foreach (var i in _bulletList)
-                        {
-                            Console.Write($"{(i == 1 ? "真" : "假")}");
-                        }
-                    }
-                    else Console.Write(GenerateBulletString(_real + _fake));
-                }
-                else Console.WriteLine("本轮结束");
-                Console.WriteLine("");
-                break;
-            
-            case 2:
-                Console.WriteLine($"剩余实弹:\t{_real}");
-                Console.WriteLine($"剩余空包弹:\t{_fake}");
-                Console.WriteLine("已知:");
-                foreach (var pair in _phoneDict)
-                {
-                    Console.WriteLine($"{pair.Key}{GetOdinaryNum(pair.Key)}:\t{(pair.Value == 1 ? "实弹" : "空包弹")}");
-                }
-
-                if (_real != 0 || _fake != 0)
-                {
-                    Console.Write("剩余顺序:\t");
-                    if (_bulletList != null)
-                    {
-                        foreach (var i in _bulletList)
-                        {
-                            Console.Write($"{(i == 1 ? "真" : "假")}");
-                        }
-                    }
-                    else Console.Write(GenerateBulletString(_real + _fake));
-                }
-                else Console.WriteLine("本轮结束");
-                Console.WriteLine("");
-                break;
+            }
+            else Console.Write(GenerateBulletString(_real + _fake));
         }
+        else Console.WriteLine("本轮结束");
+        Console.WriteLine("");
     }
 
     static string GetOdinaryNum(int num)

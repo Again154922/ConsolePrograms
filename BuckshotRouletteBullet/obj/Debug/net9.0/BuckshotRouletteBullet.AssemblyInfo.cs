@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BuckshotRouletteBullet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97f99bddef80e257870f461f13d4b21e6f01e68c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f211ba7fda81314fb3a89c70186934d706bfd02")]
 [assembly: System.Reflection.AssemblyProductAttribute("BuckshotRouletteBullet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BuckshotRouletteBullet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
