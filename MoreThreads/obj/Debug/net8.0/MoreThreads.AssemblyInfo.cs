@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoreThreads")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+732bead80817029bf48127434d376ca2f15e3d5d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97f99bddef80e257870f461f13d4b21e6f01e68c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoreThreads")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoreThreads")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

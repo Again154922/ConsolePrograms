@@ -1,4 +1,6 @@
-﻿internal static class Program
+﻿using System.Text;
+
+internal static class Program
 {
     static int _num, _real, _fake;
     static Dictionary<int, int> _phoneDict = new Dictionary<int, int>();
@@ -16,9 +18,10 @@
         Console.Write("空包弹数 >>> ");
         _fake = int.Parse(Console.ReadLine()!);
         _bulletList = null;
+        _phoneDict = new Dictionary<int, int>();
         
         Again:
-        Console.Write("键入数字:\n1. 射击\n2. 打电话\n3. 重开\n>>> ");
+        Console.Write("键入数字:\n1. 射击\n2. 信息(手机/放大镜)\n3. 重开\n>>> ");
         int operation = int.Parse(Console.ReadLine()!);
         switch (operation)
         {
@@ -76,7 +79,7 @@
                 break;
             
             case 2:
-                Console.Write("轮次数 >>> ");
+                Console.Write("子弹号 >>> ");
                 int round = int.Parse(Console.ReadLine()!);
                 Console.Write("键入数字:\n1. 实弹\n2. 空包弹\n>>> ");
                 int phoneOperation = int.Parse(Console.ReadLine()!);
@@ -143,15 +146,18 @@
                     }
                 }
 
-                if (_bulletList != null && (_real != 0 || _fake != 0))
+                if (_real != 0 || _fake != 0)
                 {
                     Console.Write("剩余顺序:\t");
-                    foreach (var i in _bulletList)
+                    if (_bulletList != null)
                     {
-                        Console.Write($"{(i == 1 ? "真" : "假")}");
+                        foreach (var i in _bulletList)
+                        {
+                            Console.Write($"{(i == 1 ? "真" : "假")}");
+                        }
                     }
+                    else Console.Write(GenerateBulletString(_real + _fake));
                 }
-                else if (_real != 0 || _fake != 0) Console.WriteLine($"下一发:\t\t{_num}{GetOdinaryNum(_num)}");
                 else Console.WriteLine("本轮结束");
                 Console.WriteLine("");
                 break;
@@ -164,16 +170,20 @@
                 {
                     Console.WriteLine($"{pair.Key}{GetOdinaryNum(pair.Key)}:\t{(pair.Value == 1 ? "实弹" : "空包弹")}");
                 }
-                
-                if (_bulletList != null && (_real != 0 || _fake != 0))
+
+                if (_real != 0 || _fake != 0)
                 {
                     Console.Write("剩余顺序:\t");
-                    foreach (var i in _bulletList)
+                    if (_bulletList != null)
                     {
-                        Console.Write($"{(i == 1 ? "真" : "假")}");
+                        foreach (var i in _bulletList)
+                        {
+                            Console.Write($"{(i == 1 ? "真" : "假")}");
+                        }
                     }
+                    else Console.Write(GenerateBulletString(_real + _fake));
                 }
-                else if (_real != 0 || _fake != 0) Console.WriteLine($"下一发:\t\t{_num}{GetOdinaryNum(_num)}");
+                else Console.WriteLine("本轮结束");
                 Console.WriteLine("");
                 break;
         }
@@ -222,5 +232,23 @@
         }
 
         return result;
+    }
+    
+    public static string GenerateBulletString(int n)
+    {
+        // 使用 StringBuilder 提高字符串拼接效率
+        StringBuilder sb = new StringBuilder(n);
+        for (int x = 1; x <= n; x++)
+        {
+            if (_phoneDict.TryGetValue(x + _num - 1, out int value))
+            {
+                sb.Append(value == 1 ? '真' : '假');
+            }
+            else
+            {
+                sb.Append('?');
+            }
+        }
+        return sb.ToString();
     }
 }
