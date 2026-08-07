@@ -1,0 +1,15 @@
+F:\CSharp\Learn\RandomPi\bin\Debug\net10.0\RandomPi.exe
+F:\CSharp\Learn\RandomPi\bin\Debug\net10.0\RandomPi.deps.json
+F:\CSharp\Learn\RandomPi\bin\Debug\net10.0\RandomPi.runtimeconfig.json
+F:\CSharp\Learn\RandomPi\bin\Debug\net10.0\RandomPi.dll
+F:\CSharp\Learn\RandomPi\bin\Debug\net10.0\RandomPi.pdb
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.GeneratedMSBuildEditorConfig.editorconfig
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.AssemblyInfoInputs.cache
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.AssemblyInfo.cs
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.csproj.CoreCompileInputs.cache
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.sourcelink.json
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.dll
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\refint\RandomPi.dll
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.pdb
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\RandomPi.genruntimeconfig.cache
+F:\CSharp\Learn\RandomPi\obj\Debug\net10.0\ref\RandomPi.dll

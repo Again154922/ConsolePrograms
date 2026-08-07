@@ -26,3 +26,4 @@ F:\CSharp\Learn\SplitString\obj\Debug\net8.0\refint\SplitString.dll
 F:\CSharp\Learn\SplitString\obj\Debug\net8.0\SplitString.pdb
 F:\CSharp\Learn\SplitString\obj\Debug\net8.0\SplitString.genruntimeconfig.cache
 F:\CSharp\Learn\SplitString\obj\Debug\net8.0\ref\SplitString.dll
+F:\CSharp\Learn\SplitString\obj\Debug\net8.0\SplitString.sourcelink.json
