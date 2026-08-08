@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RandomPi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c40bd49b11a0736db18e6a304f52844c3156f6b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6c6ffa6c55f9cbbd66dab7a60f04c0f3bc6dfdd8")]
 [assembly: System.Reflection.AssemblyProductAttribute("RandomPi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RandomPi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

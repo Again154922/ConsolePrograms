@@ -1,0 +1,15 @@
+F:\CSharp\Learn\PushBox\bin\Debug\net10.0\PushBox.exe
+F:\CSharp\Learn\PushBox\bin\Debug\net10.0\PushBox.deps.json
+F:\CSharp\Learn\PushBox\bin\Debug\net10.0\PushBox.runtimeconfig.json
+F:\CSharp\Learn\PushBox\bin\Debug\net10.0\PushBox.dll
+F:\CSharp\Learn\PushBox\bin\Debug\net10.0\PushBox.pdb
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.GeneratedMSBuildEditorConfig.editorconfig
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.AssemblyInfoInputs.cache
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.AssemblyInfo.cs
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.csproj.CoreCompileInputs.cache
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.sourcelink.json
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.dll
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\refint\PushBox.dll
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.pdb
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\PushBox.genruntimeconfig.cache
+F:\CSharp\Learn\PushBox\obj\Debug\net10.0\ref\PushBox.dll

@@ -1,0 +1,2 @@
+F:\CSharp\Learn\PushBox\bin\Release\net10.0\publish\PushBox.pdb
+F:\CSharp\Learn\PushBox\bin\Release\net10.0\publish\PushBox.exe
