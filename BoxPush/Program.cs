@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text.Json;
 using System.Xml.Schema;
 
-namespace PushBox;
+namespace BoxPush;
 
 internal static class Program
 {

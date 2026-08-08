@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitString", "SplitString\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomPi", "RandomPi\RandomPi.csproj", "{7CC31C77-6604-4A4B-8F8A-0B9E4D8A9C20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PushBox", "PushBox\PushBox.csproj", "{823CA3B4-00C5-4326-BF2C-14C1299C1AD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxPush", "BoxPush\BoxPush.csproj", "{823CA3B4-00C5-4326-BF2C-14C1299C1AD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

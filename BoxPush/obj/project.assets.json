@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CSharp\\Learn\\PushBox\\PushBox.csproj",
-      "projectName": "PushBox",
-      "projectPath": "F:\\CSharp\\Learn\\PushBox\\PushBox.csproj",
+      "projectUniqueName": "F:\\CSharp\\Learn\\BoxPush\\BoxPush.csproj",
+      "projectName": "BoxPush",
+      "projectPath": "F:\\CSharp\\Learn\\BoxPush\\BoxPush.csproj",
       "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "F:\\CSharp\\Learn\\PushBox\\obj\\",
+      "outputPath": "F:\\CSharp\\Learn\\BoxPush\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
