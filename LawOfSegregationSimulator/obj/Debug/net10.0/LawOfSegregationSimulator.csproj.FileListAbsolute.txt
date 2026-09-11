@@ -1,0 +1,15 @@
+F:\CSharp\Learn\LawOfSegregationSimulator\bin\Debug\net10.0\LawOfSegregationSimulator.exe
+F:\CSharp\Learn\LawOfSegregationSimulator\bin\Debug\net10.0\LawOfSegregationSimulator.deps.json
+F:\CSharp\Learn\LawOfSegregationSimulator\bin\Debug\net10.0\LawOfSegregationSimulator.runtimeconfig.json
+F:\CSharp\Learn\LawOfSegregationSimulator\bin\Debug\net10.0\LawOfSegregationSimulator.dll
+F:\CSharp\Learn\LawOfSegregationSimulator\bin\Debug\net10.0\LawOfSegregationSimulator.pdb
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.GeneratedMSBuildEditorConfig.editorconfig
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.AssemblyInfoInputs.cache
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.AssemblyInfo.cs
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.csproj.CoreCompileInputs.cache
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.sourcelink.json
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.dll
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\refint\LawOfSegregationSimulator.dll
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.pdb
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\LawOfSegregationSimulator.genruntimeconfig.cache
+F:\CSharp\Learn\LawOfSegregationSimulator\obj\Debug\net10.0\ref\LawOfSegregationSimulator.dll

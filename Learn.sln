@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomPi", "RandomPi\Random
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxPush", "BoxPush\BoxPush.csproj", "{823CA3B4-00C5-4326-BF2C-14C1299C1AD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LawOfSegregationSimulator", "LawOfSegregationSimulator\LawOfSegregationSimulator.csproj", "{4ABC453E-F435-4754-8567-0DA05DB1E1F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,5 +56,9 @@ Global
 		{823CA3B4-00C5-4326-BF2C-14C1299C1AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{823CA3B4-00C5-4326-BF2C-14C1299C1AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{823CA3B4-00C5-4326-BF2C-14C1299C1AD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ABC453E-F435-4754-8567-0DA05DB1E1F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ABC453E-F435-4754-8567-0DA05DB1E1F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ABC453E-F435-4754-8567-0DA05DB1E1F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ABC453E-F435-4754-8567-0DA05DB1E1F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
