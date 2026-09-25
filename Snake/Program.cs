@@ -63,6 +63,17 @@ internal static class Program
 
     private static void Init(ref int[][] map, List<(int, int)> snake, ref (int, int) food)
     {
+        Console.Write("输入游戏难度(1-5),默认为3 >>> ");
+        int speed = int.Parse(Console.ReadLine() ?? "3") switch
+        {
+            1 => 1000,
+            2 => 750,
+            3 => 500,
+            4 => 250,
+            5 => 100,
+            _ => throw new Exception()
+        };
+
         Console.CursorVisible = false;
         
         map = 
@@ -88,20 +99,15 @@ internal static class Program
         SetFood(_random, map, ref food);
         SetMap(ref map, snake, food);
         ShowMap(map);
-        
-        Console.Write("输入游戏难度(1-5),默认为3 >>> ");
-        int speed = int.Parse(Console.ReadLine() ?? "3") switch
-        {
-            1 => 1000,
-            2 => 750,
-            3 => 500,
-            4 => 250,
-            5 => 100,
-            _ => throw new Exception()
-        };
 
+        int[][] mapCopy = map;
         Task Timer = Task.Run(async () =>
         {
+            Console.WriteLine("按方向键或WASD控制蛇的移动");
+            Console.WriteLine("按任意键开始游戏");
+            Console.ReadKey(true);
+            Console.Clear();
+            ShowMap(mapCopy);
             do
             {
                 await Task.Delay(speed);
