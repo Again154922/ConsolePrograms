@@ -1,0 +1,15 @@
+F:\CSharp\ConsolePrograms\Snake\bin\Debug\net10.0\Snake.exe
+F:\CSharp\ConsolePrograms\Snake\bin\Debug\net10.0\Snake.deps.json
+F:\CSharp\ConsolePrograms\Snake\bin\Debug\net10.0\Snake.runtimeconfig.json
+F:\CSharp\ConsolePrograms\Snake\bin\Debug\net10.0\Snake.dll
+F:\CSharp\ConsolePrograms\Snake\bin\Debug\net10.0\Snake.pdb
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.GeneratedMSBuildEditorConfig.editorconfig
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.AssemblyInfoInputs.cache
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.AssemblyInfo.cs
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.csproj.CoreCompileInputs.cache
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.sourcelink.json
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.dll
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\refint\Snake.dll
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.pdb
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\Snake.genruntimeconfig.cache
+F:\CSharp\ConsolePrograms\Snake\obj\Debug\net10.0\ref\Snake.dll
