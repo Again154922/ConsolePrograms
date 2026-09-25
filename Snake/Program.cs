@@ -19,21 +19,24 @@ internal static class Program
     private static bool _move;
     private static int _dir = Right;
     private static List<(int, int)> _snake = new() { (8, 9), (8, 8), (8, 7) };
+    private static (int, int) _food;
+
+    private static Random _random = new();
     
     private static void Main(string[] args)
     {
-        Init();
+        Init(ref _map, _snake, ref _food);
 
         while (_gameStart)
         {
             if (_move)
             {
                 _move = false;
-                Move(ref _map, _dir, ref _snake);
+                Move(ref _map, _dir, ref _snake, ref _food);
             }
         }
 
-        Exit();
+        Exit(_map);
     }
 
     private static void ShowMap(int[][] map)
@@ -58,11 +61,11 @@ internal static class Program
         }
     }
 
-    private static void Init()
+    private static void Init(ref int[][] map, List<(int, int)> snake, ref (int, int) food)
     {
         Console.CursorVisible = false;
         
-        _map = 
+        map = 
         [
             [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
@@ -72,7 +75,7 @@ internal static class Program
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 2, 2, 1, 0, 0, 0, 0, 0, 0, 9],
+            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
@@ -82,13 +85,26 @@ internal static class Program
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
         ];
-        ShowMap(_map);
+        SetFood(_random, map, ref food);
+        SetMap(ref map, snake, food);
+        ShowMap(map);
+        
+        Console.Write("输入游戏难度(1-5),默认为3 >>> ");
+        int speed = int.Parse(Console.ReadLine() ?? "3") switch
+        {
+            1 => 1000,
+            2 => 750,
+            3 => 500,
+            4 => 250,
+            5 => 100,
+            _ => throw new Exception()
+        };
 
         Task Timer = Task.Run(async () =>
         {
             do
             {
-                await Task.Delay(1000);
+                await Task.Delay(speed);
                 _move = true;
             } while (_gameStart);
         });
@@ -100,10 +116,18 @@ internal static class Program
                 var key = Console.ReadKey(true).Key;
                 _dir = key switch
                 {
-                    ConsoleKey.UpArrow or ConsoleKey.W => Up,
-                    ConsoleKey.LeftArrow or ConsoleKey.A => Left,
-                    ConsoleKey.DownArrow or ConsoleKey.S => Down,
-                    ConsoleKey.RightArrow or ConsoleKey.D => Right,
+                    ConsoleKey.UpArrow or ConsoleKey.W => _map[_snake[0].Item1 - 1][_snake[0].Item2] is Empty or Food
+                        ? Up
+                        : _dir,
+                    ConsoleKey.LeftArrow or ConsoleKey.A => _map[_snake[0].Item1][_snake[0].Item2 - 1] is Empty or Food
+                        ? Left
+                        : _dir,
+                    ConsoleKey.DownArrow or ConsoleKey.S => _map[_snake[0].Item1 + 1][_snake[0].Item2] is Empty or Food
+                        ? Down
+                        : _dir,
+                    ConsoleKey.RightArrow or ConsoleKey.D => _map[_snake[0].Item1][_snake[0].Item2 + 1] is Empty or Food
+                        ? Right
+                        : _dir,
                     _ => _dir
                 };
             } while (_gameStart);
@@ -112,55 +136,97 @@ internal static class Program
         _gameStart = true;
     }
 
-    private static void Move(ref int[][] map, int dir, ref List<(int, int)> snake)
+    private static void Move(ref int[][] map, int dir, ref List<(int, int)> snake, ref (int, int) food)
     {
         switch (dir)
         {
             case Up:
-                if (map[snake[0].Item1 - 1][snake[0].Item2] != Empty) _gameStart = false;
+                if (map[snake[0].Item1 - 1][snake[0].Item2] is Body or Wall)
+                {
+                    _gameStart = false;
+                    return;
+                }
                 
+                if (map[snake[0].Item1 - 1][snake[0].Item2] != Food)
+                    snake.RemoveAt(snake.Count - 1);
+                else
+                    SetFood(_random, map, ref food);
                 snake.Insert(0, (snake[0].Item1 - 1, snake[0].Item2));
-                snake.RemoveAt(snake.Count - 1);
                 
                 break;
             
             case Left:
-                if (map[snake[0].Item1][snake[0].Item2 - 1] != Empty) _gameStart = false;
+                if (map[snake[0].Item1][snake[0].Item2 - 1] is Body or Wall)
+                {
+                    _gameStart = false;
+                    return;
+                }
                 
+                if (map[snake[0].Item1][snake[0].Item2 - 1] != Food)
+                    snake.RemoveAt(snake.Count - 1);
+                else
+                    SetFood(_random, map, ref food);
                 snake.Insert(0, (snake[0].Item1, snake[0].Item2 - 1));
-                snake.RemoveAt(snake.Count - 1);
                 
                 break;
             
             case Down:
-                if (map[snake[0].Item1 + 1][snake[0].Item2] != Empty) _gameStart = false;
+                if (map[snake[0].Item1 + 1][snake[0].Item2] is Body or Wall)
+                {
+                    _gameStart = false;
+                    return;
+                }
                 
+                if (map[snake[0].Item1 + 1][snake[0].Item2] != Food)
+                    snake.RemoveAt(snake.Count - 1);
+                else
+                    SetFood(_random, map, ref food);
                 snake.Insert(0, (snake[0].Item1 + 1, snake[0].Item2));
-                snake.RemoveAt(snake.Count - 1);
-                
+
                 break;
             
             case Right:
-                if (map[snake[0].Item1][snake[0].Item2 + 1] != Empty) _gameStart = false;
+                if (map[snake[0].Item1][snake[0].Item2 + 1] is Body or Wall)
+                {
+                    _gameStart = false;
+                    return;
+                }
                 
+                if (map[snake[0].Item1][snake[0].Item2 + 1] != Food)
+                    snake.RemoveAt(snake.Count - 1);
+                else
+                    SetFood(_random, map, ref food);
                 snake.Insert(0, (snake[0].Item1, snake[0].Item2 + 1));
-                snake.RemoveAt(snake.Count - 1);
                 
                 break;
         }
         
-        SetMap(ref map, snake);
+        SetMap(ref map, snake, food);
         
         ShowMap(map);
     }
     
-    private static void Exit()
+    private static void Exit(int[][] map)
     {
+        bool win = true;
+        foreach (var i in map)
+        {
+            foreach (var j in i)
+            {
+                if (j == Empty)
+                {
+                    win = false;
+                    break;
+                }
+            }
+            if (!win) break;
+        }
+        Console.WriteLine(win ? "恭喜你，你赢了!" : "游戏结束!");
         Console.WriteLine("按任意键退出...");
-        Console.ReadKey();
+        Console.ReadKey(true);
     }
 
-    private static void SetMap(ref int[][] map, List<(int, int)> snake)
+    private static void SetMap(ref int[][] map, List<(int, int)> snake, (int, int) food)
     {
         map =
         [
@@ -172,7 +238,7 @@ internal static class Program
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 2, 2, 1, 0, 0, 0, 0, 0, 0, 9],
+            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
             [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
@@ -188,5 +254,18 @@ internal static class Program
         {
             map[pos.Item1][pos.Item2] = Body;
         }
+
+        map[food.Item1][food.Item2] = Food;
+    }
+    
+    private static void SetFood(Random random, int[][] map, ref (int, int) food)
+    {
+        int x, y;
+        do
+        {
+            x = random.Next(1, 15);
+            y = random.Next(1, 15);
+        } while(map[x][y] != Empty);
+        food = (x, y);
     }
 }
