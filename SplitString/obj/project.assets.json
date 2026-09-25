@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CSharp\\Learn\\SplitString\\SplitString.csproj",
+      "projectUniqueName": "F:\\CSharp\\ConsolePrograms\\SplitString\\SplitString.csproj",
       "projectName": "SplitString",
-      "projectPath": "F:\\CSharp\\Learn\\SplitString\\SplitString.csproj",
+      "projectPath": "F:\\CSharp\\ConsolePrograms\\SplitString\\SplitString.csproj",
       "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "F:\\CSharp\\Learn\\SplitString\\obj\\",
+      "outputPath": "F:\\CSharp\\ConsolePrograms\\SplitString\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

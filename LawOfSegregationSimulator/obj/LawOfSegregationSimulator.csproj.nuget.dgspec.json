@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CSharp\\Learn\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj": {}
+    "F:\\CSharp\\ConsolePrograms\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj": {}
   },
   "projects": {
-    "F:\\CSharp\\Learn\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj": {
+    "F:\\CSharp\\ConsolePrograms\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CSharp\\Learn\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj",
+        "projectUniqueName": "F:\\CSharp\\ConsolePrograms\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj",
         "projectName": "LawOfSegregationSimulator",
-        "projectPath": "F:\\CSharp\\Learn\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj",
+        "projectPath": "F:\\CSharp\\ConsolePrograms\\LawOfSegregationSimulator\\LawOfSegregationSimulator.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "F:\\CSharp\\Learn\\LawOfSegregationSimulator\\obj\\",
+        "outputPath": "F:\\CSharp\\ConsolePrograms\\LawOfSegregationSimulator\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

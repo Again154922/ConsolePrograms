@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CSharp\\Learn\\MoreThreads\\MoreThreads.csproj": {}
+    "F:\\CSharp\\ConsolePrograms\\MoreThreads\\MoreThreads.csproj": {}
   },
   "projects": {
-    "F:\\CSharp\\Learn\\MoreThreads\\MoreThreads.csproj": {
+    "F:\\CSharp\\ConsolePrograms\\MoreThreads\\MoreThreads.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CSharp\\Learn\\MoreThreads\\MoreThreads.csproj",
+        "projectUniqueName": "F:\\CSharp\\ConsolePrograms\\MoreThreads\\MoreThreads.csproj",
         "projectName": "MoreThreads",
-        "projectPath": "F:\\CSharp\\Learn\\MoreThreads\\MoreThreads.csproj",
+        "projectPath": "F:\\CSharp\\ConsolePrograms\\MoreThreads\\MoreThreads.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "F:\\CSharp\\Learn\\MoreThreads\\obj\\",
+        "outputPath": "F:\\CSharp\\ConsolePrograms\\MoreThreads\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

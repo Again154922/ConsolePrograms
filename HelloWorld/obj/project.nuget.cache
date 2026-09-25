@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "usOH4u+2Qwg=",
+  "dgSpecHash": "xMYJAvO2HPM=",
   "success": true,
-  "projectFilePath": "F:\\CSharp\\Learn\\HelloWorld\\HelloWorld.csproj",
+  "projectFilePath": "F:\\CSharp\\ConsolePrograms\\HelloWorld\\HelloWorld.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\james\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.29\\microsoft.netcore.app.ref.8.0.29.nupkg.sha512",
     "C:\\Users\\james\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.29\\microsoft.windowsdesktop.app.ref.8.0.29.nupkg.sha512",

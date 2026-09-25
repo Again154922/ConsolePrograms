@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CSharp\\Learn\\Polymorphic\\Polymorphic.csproj",
+      "projectUniqueName": "F:\\CSharp\\ConsolePrograms\\Polymorphic\\Polymorphic.csproj",
       "projectName": "Polymorphic",
-      "projectPath": "F:\\CSharp\\Learn\\Polymorphic\\Polymorphic.csproj",
+      "projectPath": "F:\\CSharp\\ConsolePrograms\\Polymorphic\\Polymorphic.csproj",
       "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "F:\\CSharp\\Learn\\Polymorphic\\obj\\",
+      "outputPath": "F:\\CSharp\\ConsolePrograms\\Polymorphic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

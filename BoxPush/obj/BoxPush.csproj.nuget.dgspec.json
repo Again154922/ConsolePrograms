@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CSharp\\Learn\\BoxPush\\BoxPush.csproj": {}
+    "F:\\CSharp\\ConsolePrograms\\BoxPush\\BoxPush.csproj": {}
   },
   "projects": {
-    "F:\\CSharp\\Learn\\BoxPush\\BoxPush.csproj": {
+    "F:\\CSharp\\ConsolePrograms\\BoxPush\\BoxPush.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CSharp\\Learn\\BoxPush\\BoxPush.csproj",
+        "projectUniqueName": "F:\\CSharp\\ConsolePrograms\\BoxPush\\BoxPush.csproj",
         "projectName": "BoxPush",
-        "projectPath": "F:\\CSharp\\Learn\\BoxPush\\BoxPush.csproj",
+        "projectPath": "F:\\CSharp\\ConsolePrograms\\BoxPush\\BoxPush.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "F:\\CSharp\\Learn\\BoxPush\\obj\\",
+        "outputPath": "F:\\CSharp\\ConsolePrograms\\BoxPush\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

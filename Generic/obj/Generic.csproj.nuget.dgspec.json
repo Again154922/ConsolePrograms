@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\CSharp\\Learn\\Generic\\Generic.csproj": {}
+    "F:\\CSharp\\ConsolePrograms\\Generic\\Generic.csproj": {}
   },
   "projects": {
-    "F:\\CSharp\\Learn\\Generic\\Generic.csproj": {
+    "F:\\CSharp\\ConsolePrograms\\Generic\\Generic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\CSharp\\Learn\\Generic\\Generic.csproj",
+        "projectUniqueName": "F:\\CSharp\\ConsolePrograms\\Generic\\Generic.csproj",
         "projectName": "Generic",
-        "projectPath": "F:\\CSharp\\Learn\\Generic\\Generic.csproj",
+        "projectPath": "F:\\CSharp\\ConsolePrograms\\Generic\\Generic.csproj",
         "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-        "outputPath": "F:\\CSharp\\Learn\\Generic\\obj\\",
+        "outputPath": "F:\\CSharp\\ConsolePrograms\\Generic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"

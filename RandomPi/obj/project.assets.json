@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\CSharp\\Learn\\RandomPi\\RandomPi.csproj",
+      "projectUniqueName": "F:\\CSharp\\ConsolePrograms\\RandomPi\\RandomPi.csproj",
       "projectName": "RandomPi",
-      "projectPath": "F:\\CSharp\\Learn\\RandomPi\\RandomPi.csproj",
+      "projectPath": "F:\\CSharp\\ConsolePrograms\\RandomPi\\RandomPi.csproj",
       "packagesPath": "C:\\Users\\james\\.nuget\\packages\\",
-      "outputPath": "F:\\CSharp\\Learn\\RandomPi\\obj\\",
+      "outputPath": "F:\\CSharp\\ConsolePrograms\\RandomPi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\james\\AppData\\Roaming\\NuGet\\NuGet.Config"
