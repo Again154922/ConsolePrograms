@@ -16,11 +16,12 @@ internal static class Program
     private const int Right = -4;
 
     private static int[][] _map = null!;
+    private static int[][] _mapBase = null!;
     private static bool _gameStart;
     
     private static int _speed;
     private static int _dir = Right;
-    private static List<(int, int)> _snake = new() { (8, 9), (8, 8), (8, 7) };
+    private static List<(int, int)> _snake = new();
     private static (int, int) _food;
 
     private static Random _random = new();
@@ -88,8 +89,10 @@ internal static class Program
     private static void Init(ref int[][] map, List<(int, int)> snake, ref (int, int) food)
     {
         Console.Write("输入游戏难度(1-5),默认为3 >>> ");
-        string? input = Console.ReadLine();
-        _speed = int.Parse(input is "1" or "2" or "3" or "4" or "5" ? input : "3") switch
+        string? speedInput = Console.ReadLine();
+        bool getSpeedSuccess = int.TryParse(speedInput, out int speed);
+        if (!getSpeedSuccess || speed < 1 || speed > 5) speed = 3;
+        _speed = speed switch
         {
             1 => 1000,
             2 => 750,
@@ -98,33 +101,20 @@ internal static class Program
             5 => 100,
             _ => throw new Exception()
         };
+        
+        Console.Write("输入游戏地图大小(5-20),默认为15 >>> ");
+        string? mapSizeInput = Console.ReadLine();
+        bool getMapSizeSuccess = int.TryParse(mapSizeInput, out int mapSize);
+        if (!getMapSizeSuccess || mapSize < 5 || mapSize > 20) mapSize = 15;
+        SetBaseInfo(mapSize, ref _mapBase, ref _snake);
 
         Console.CursorVisible = false;
-        
-        // map = 
-        // [
-        //     [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-        //     [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
-        // ]; 
+
         SetMap(ref map, snake, (1, 1));
         map[1][1] = Empty;
         SetFood(_random, map, ref food);
         SetMap(ref map, snake, food);
+        Console.Clear();
         ShowMap(map);
 
         Console.WriteLine("按方向键或WASD控制蛇的移动");
@@ -222,26 +212,7 @@ internal static class Program
 
     private static void SetMap(ref int[][] map, List<(int, int)> snake, (int, int) food)
     {
-        map =
-        [
-            [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9],
-            [9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9],
-        ];
+        map = _mapBase.Select(row => (int[])row.Clone()).ToArray();
         
         map[snake[0].Item1][snake[0].Item2] = Head;
         foreach (var pos in snake[1..])
@@ -261,9 +232,9 @@ internal static class Program
     private static List<(int, int)> GetEmpty(int[][] map)
     {
         List<(int, int)> empty = new();
-        for (int i = 1; i < 16; i++)
+        for (int i = 1; i < map.Length - 1; i++)
         {
-            for (int j = 1; j < 16; j++)
+            for (int j = 1; j < map[i].Length - 1; j++)
             {
                 if (map[i][j] == Empty)
                 {
@@ -272,5 +243,30 @@ internal static class Program
             }
         }
         return empty;
+    }
+
+    private static void SetBaseInfo(int len, ref int[][] mapBase, ref List<(int, int)> snake)
+    {
+        mapBase = new int[len + 2][];
+        
+        for (int i = 0; i < len + 2; i++)
+        {
+            mapBase[i] = new int[len + 2];
+        }
+
+        for (int i = 0; i < len + 2; i++)
+        {
+            (mapBase[0][i], mapBase[^1][i]) = (9, 9);
+        }
+
+        for (int i = 1; i <= len; i++)
+        {
+            mapBase[i] = new int[len + 2];
+            (mapBase[i][0], mapBase[i][^1]) = (9, 9);
+        }
+
+        snake.Add((len / 2 + 1, len / 2 + 1));
+        snake.Add((len / 2 + 1, len / 2));
+        snake.Add((len / 2 + 1, len / 2 - 1));
     }
 }
