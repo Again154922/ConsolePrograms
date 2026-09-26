@@ -36,35 +36,57 @@ public static class AutoMode
         _len = Ask("输入地图大小(5-20),默认为15 >>> ", 5, 20, 15);
         _tickMs = Ask("输入每步间隔毫秒(默认25, 0=最快) >>> ", 0, 2000, 25);
 
-        BuildCycle();
-        Reset();
-        Console.Clear();
-        Draw();
-
-        var clock = Stopwatch.StartNew();
-        while (!_over && !_full)
+        Console.CursorVisible = false;                       // 和手玩版一样：藏起光标，画面不闪
+        bool canPollKey = !Console.IsInputRedirected;        // 输入被重定向时不能问 KeyAvailable
+        bool quitByUser = false;
+        try
         {
-            int d = ChooseDir();
-            if (d < 0) { _over = true; break; }
-            Step(d);
-            _moves++;
+            BuildCycle();
+            Reset();
+            Console.Clear();
             Draw();
-            if (_tickMs > 0) Thread.Sleep(_tickMs);
-        }
-        clock.Stop();
 
-        Console.SetCursorPosition(0, _len + 3);
-        if (_full)
-        {
-            Console.WriteLine($"恭喜你，你赢了！{_len * _len} 格全部填满。");
-            Console.WriteLine($"步数={_moves}  最终长度={_snake.Count}  用时={clock.Elapsed.TotalSeconds:0.0} 秒");
+            var clock = Stopwatch.StartNew();
+            while (!_over && !_full)
+            {
+                if (canPollKey && Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape)
+                {
+                    quitByUser = true;
+                    break;
+                }
+
+                int d = ChooseDir();
+                if (d < 0) { _over = true; break; }
+                Step(d);
+                _moves++;
+                Draw();
+                if (_tickMs > 0) Thread.Sleep(_tickMs);
+            }
+            clock.Stop();
+
+            Console.SetCursorPosition(0, _len + 3);
+            if (_full)
+            {
+                Console.WriteLine($"恭喜你，你赢了！{_len * _len} 格全部填满。");
+                Console.WriteLine($"步数={_moves}  最终长度={_snake.Count}  用时={clock.Elapsed.TotalSeconds:0.0} 秒");
+            }
+            else if (quitByUser)
+            {
+                Console.WriteLine("你按了 Esc，自动游玩结束。");
+                Console.WriteLine($"步数={_moves}  长度={_snake.Count}  用时={clock.Elapsed.TotalSeconds:0.0} 秒");
+            }
+            else
+            {
+                Console.WriteLine("游戏结束（意外死亡）！");
+                Console.WriteLine($"死亡时：步数={_moves}  长度={_snake.Count}  用时={clock.Elapsed.TotalSeconds:0.0} 秒");
+            }
+            Console.WriteLine("按任意键退出...");
         }
-        else
+        finally
         {
-            Console.WriteLine("游戏结束（意外死亡）！");
-            Console.WriteLine($"死亡时：步数={_moves}  长度={_snake.Count}  用时={clock.Elapsed.TotalSeconds:0.0} 秒");
+            Console.CursorVisible = true;                    // 退出前把光标还回去
         }
-        Console.WriteLine("按任意键退出...");
+
         Console.ReadKey(true);
     }
 
