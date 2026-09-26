@@ -181,11 +181,11 @@ internal static class Program
             return;
         }
 
+        snake.Insert(0, (next.Row, next.Col));
         if (map[next.Row][next.Col] != Food)
             snake.RemoveAt(snake.Count - 1);
         else if (GetEmpty(map).Count != 0)
             SetFood(_random, map, ref food);
-        snake.Insert(0, (next.Row, next.Col));
 
         SetMap(ref map, snake, food);
     }
@@ -256,17 +256,17 @@ internal static class Program
 
         for (int i = 0; i < len + 2; i++)
         {
-            (mapBase[0][i], mapBase[^1][i]) = (9, 9);
+            (mapBase[0][i], mapBase[^1][i]) = (Wall, Wall);
         }
 
         for (int i = 1; i <= len; i++)
         {
             mapBase[i] = new int[len + 2];
-            (mapBase[i][0], mapBase[i][^1]) = (9, 9);
+            (mapBase[i][0], mapBase[i][^1]) = (Wall, Wall);
         }
 
+        snake.Add((len / 2 + 1, len / 2 + 2));
         snake.Add((len / 2 + 1, len / 2 + 1));
         snake.Add((len / 2 + 1, len / 2));
-        snake.Add((len / 2 + 1, len / 2 - 1));
     }
 }
