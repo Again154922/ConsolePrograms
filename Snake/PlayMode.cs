@@ -2,7 +2,7 @@
 
 namespace Snake;
 
-internal static class Program
+public static class PlayMode
 {
     private const int Head = 1;
     private const int Body = 2;
@@ -35,7 +35,7 @@ internal static class Program
         [Right] = (0, 1),
     };
     
-    private static async Task Main()
+    public static async Task Run()
     {
         Init(ref _map, _snake, ref _food);
 
